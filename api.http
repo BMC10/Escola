@@ -1,0 +1,29 @@
+POST http://localhost:3000/novoAluno
+Content-Type: application/json
+
+{
+    "matricula": "554468",
+    "nome": "Joel",
+    "email": "joel@mat.com",
+    "genero": "M",
+    "turma": "3"
+}
+
+###
+
+GET http://localhost:3000/listarAluno
+
+### 
+DELETE  http://localhost:3000/deletarAluno/10
+
+###
+PUT http://localhost:3000/atualizarAluno/554468
+Content-Type: application/json
+
+{
+    "matricula": "15",
+    "nome": "Joel",
+    "email": "joel@mat.com",
+    "genero": "M",
+    "turma": "3"
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola</title>
+    <link rel="stylesheet" href="/css/style.css">
+    
+</head>
+<body>
+    <h1>Bem vindo à Escola</h1>
+
+<section class="formulario">
+    <form action="/novoAluno" method="post">
+        <fieldset> <legend> Cadastro </legend>
+            <label for="matricula">Matrícula</label>
+            <input type="text" name="matricula" id="matricula">
+            <br>
+            <label for="nome">Nome Completo do aluno</label>
+            <input type="text" name="nome" id="nome">
+            <br>
+            <label for="turma">Turma</label>
+            <input type="text" name="turma" id="turma">
+            <br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required="email">
+            <br>
+            <label for="genero">Gênero:</label>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="feminino" name="genero" value="feminino">
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="outros" name="genero" value="outros">
+            <label for="outros">Outros</label>
+            <br>  
+        </fieldset>
+        <br>
+        <div class="botao">
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</section>
+ 
+</body>
+</html>
